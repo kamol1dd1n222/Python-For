@@ -1,7 +1,8 @@
-son = int(input("Istalgan 15 dan kichik son: "))
+son = int(input("Son: "))
 step = int(input("Nechtadan qadam tashlasin: "))
-if son >= 15:
-    print("15 dan kichik son kiriting!!!")
-else: 
+if son < 15:
     for i in range(son,15+1,step):
+        print(i,end="  ")
+else:
+    for i in range(son,15-1,-step):
         print(i,end="  ")
